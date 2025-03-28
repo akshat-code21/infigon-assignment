@@ -13,6 +13,7 @@ interface TestExplorerProps {
 
 const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestClick }) => {
   const [activeTest, setActiveTest] = useState<number>(0);
+  const [activeSubItem, setActiveSubItem] = useState<string | null>(null);
 
   const tests = [
     {
@@ -26,10 +27,10 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/16ab353f780502179c560d050daa81b70445c4b8?placeholderIfAbsent=true",
       testNumber: "TEST 2",
-      testName: "Interest Explorer",
+      testName: "Understanding Interest Explorer",
       textColor: "text-green-600",
       submenuTitle: "Understanding Interest Explorer",
-      submenuItems: ["Interest Areas", "Your Interests"],
+      submenuItems: ["Understanding Interest Explorer", "RIASEC Model", "Your Result"],
     },
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/98c1e1ea421adf9234d5739dfb02351a47593098?placeholderIfAbsent=true",
@@ -58,6 +59,7 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
   ];
 
   const handleSubmenuItemClick = (testName: string, subItem: string) => {
+    setActiveSubItem(subItem);
     if (onSubmenuItemClick) {
       onSubmenuItemClick({ testName, subItem });
     }
@@ -65,8 +67,21 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
 
   const handleTestClick = (index: number) => {
     setActiveTest(index);
+
+
+    const firstSubmenuItem = tests[index].submenuItems[0] || null;
+    setActiveSubItem(firstSubmenuItem);
+
     if (onTestClick) {
       onTestClick(tests[index].testName);
+    }
+
+
+    if (onSubmenuItemClick && firstSubmenuItem) {
+      onSubmenuItemClick({
+        testName: tests[index].testName,
+        subItem: firstSubmenuItem
+      });
     }
   };
 
@@ -88,6 +103,7 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
               <TestSubmenu
                 title={test.submenuTitle}
                 items={test.submenuItems || []}
+                activeItem={activeSubItem}
                 onItemClick={(subItem) => handleSubmenuItemClick(test.testName, subItem)}
               />
             )}

@@ -1,6 +1,11 @@
 import React from "react";
 import PersonalityTypes from "../Personality/PersonalityTypes";
 import PersonalityExplorer from "../Personality/PersonalityExplorer";
+import YourResult from "../Result/YourResult";
+import InterestExplorer from "../InterestExplorer/InterestExplorer";
+import ThemesOfRiasec from "../RIASEC/ThemesOfRiasec";
+import RiasecCareerInfo from "../RIASEC/RiasecCareerInfo";
+import ResultsPage from "../InterestExplorer/ResultsPage";
 
 interface DynamicContentProps {
   testName: string;
@@ -11,12 +16,9 @@ const DynamicContent: React.FC<DynamicContentProps> = ({ testName, subItem }) =>
   const renderContent = () => {
     if (!subItem) {
       switch (testName) {
-        case "Interest Explorer":
+        case "Understanding Interest Explorer":
           return (
-            <div className="h-full">
-              <h1 className="text-2xl font-bold mb-4">Interest Explorer Overview</h1>
-              <p className="mb-4">Discover your interests and how they align with potential career paths.</p>
-            </div>
+            <InterestExplorer />
           );
         case "Career Motivators":
           return (
@@ -43,53 +45,52 @@ const DynamicContent: React.FC<DynamicContentProps> = ({ testName, subItem }) =>
           return <PersonalityTypes />;
         case "Your Result":
           return (
-            <div className="h-full">
-              <h1>results</h1>
-            </div>
+            <YourResult />
           );
         default:
           return null;
       }
     }
-    
-    if (testName === "Interest Explorer") {
+
+    if (testName === "Understanding Interest Explorer") {
       switch (subItem) {
-        case "Interest Areas":
+        case "Understanding Interest Explorer":
+          return <InterestExplorer />;
+        case "RIASEC Model":
           return (
-            <div className="h-full">
-              interest areas
+            <div className="flex flex-col">
+              <ThemesOfRiasec/>
+              <RiasecCareerInfo/>
             </div>
           );
-        case "Your Interests":
+        case "Your Result":
           return (
-            <div className="h-full">
-              your interests
-            </div>
+           <ResultsPage/>
           );
         default:
           return null;
       }
     }
-    
+
     if (testName === "Career Motivators") {
       switch (subItem) {
         case "Motivation Types":
           return (
             <div className="h-full">
-             motivation types
+              motivation types
             </div>
           );
         case "Your Motivators":
           return (
             <div className="h-full">
-             your motivators
+              your motivators
             </div>
           );
         default:
           return null;
       }
     }
-    
+
     return (
       <div className="h-full">
         <h1 className="text-2xl font-bold mb-4">{subItem}</h1>

@@ -21,7 +21,7 @@ function InputDesign() {
     };
 
     const handleTestClick = (testName: string) => {
-        const defaultSubItem = testName === "Personality Explorer" ? 
+        const defaultSubItem = testName === "Undesranding Personality Explorer" ? 
             "Understanding Personality Explorer" : null;
             
         setSelectedContent({
