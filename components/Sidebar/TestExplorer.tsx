@@ -35,10 +35,10 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/98c1e1ea421adf9234d5739dfb02351a47593098?placeholderIfAbsent=true",
       testNumber: "TEST 3",
-      testName: "Career Motivators",
+      testName: "Understanding Career Motivators",
       textColor: "text-amber-500",
       submenuTitle: "Understanding Career Motivators",
-      submenuItems: ["Motivation Types", "Your Motivators"],
+      submenuItems: ["Understanding Career Motivators","10 Career Motivators", "Your Result"],
     },
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/c715661d6f16380d04d5ad11e0135d005d059572?placeholderIfAbsent=true",

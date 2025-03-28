@@ -6,6 +6,8 @@ import InterestExplorer from "../InterestExplorer/InterestExplorer";
 import ThemesOfRiasec from "../RIASEC/ThemesOfRiasec";
 import RiasecCareerInfo from "../RIASEC/RiasecCareerInfo";
 import ResultsPage from "../InterestExplorer/ResultsPage";
+import CareerMotivators from "../CareerMotivators/CareerMotivators";
+import CareerMotivatorsContent from "../CareerMotivators/CareerMotivatorsContent";
 
 interface DynamicContentProps {
   testName: string;
@@ -20,7 +22,7 @@ const DynamicContent: React.FC<DynamicContentProps> = ({ testName, subItem }) =>
           return (
             <InterestExplorer />
           );
-        case "Career Motivators":
+        case "Understanding Career Motivators":
           return (
             <div className="h-full">
               <h1 className="text-2xl font-bold mb-4">Career Motivators Overview</h1>
@@ -72,15 +74,19 @@ const DynamicContent: React.FC<DynamicContentProps> = ({ testName, subItem }) =>
       }
     }
 
-    if (testName === "Career Motivators") {
+    if (testName === "Understanding Career Motivators") {
       switch (subItem) {
-        case "Motivation Types":
+        case "Understanding Career Motivators":
           return (
             <div className="h-full">
-              motivation types
+              <CareerMotivators/>
             </div>
           );
-        case "Your Motivators":
+          case "10 Career Motivators":
+            return(
+              <CareerMotivatorsContent/>
+            )
+        case "Your Result":
           return (
             <div className="h-full">
               your motivators

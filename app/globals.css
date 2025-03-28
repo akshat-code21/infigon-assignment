@@ -112,6 +112,18 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+@theme{
+  --color-first : #1999A1;
+  --color-second : #A15A19;
+  --color-third : #55DCDC;
+  --color-fourth : #F6C61A;
+  --color-fifth : #9140F8;
+  --color-sixth :#00A3FF;
+  --color-seventh : #194CA1;
+  --color-eigth : #EE82FF;
+  --color-ninth : #B97979;
+  --color-tenth : #FA9B56;
+}
 
 @layer base {
   * {
