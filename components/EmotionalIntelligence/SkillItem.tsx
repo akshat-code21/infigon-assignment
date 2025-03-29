@@ -86,17 +86,19 @@ const SkillItem: React.FC<SkillItemProps> = ({
       <div
         className={`flex flex-col gap-5 items-start px-3 py-6 w-full rounded-2xl border ${borderColor}`}
       >
-        <p className="flex-1 gap-2.5 px-3 py-0 w-full text-base leading-5 text-stone-500">
+        <p className="flex-1 gap-2.5 px-3 py-0 w-full text-base leading-5 text-stone-500 break-words">
           {description}
         </p>
         <div className="flex gap-3.5 items-start px-3 py-0 w-full bg-white rounded-xl">
-          <div className="flex flex-col flex-1 gap-5 items-start">
+          <div className="flex flex-col flex-1 gap-5 items-start w-full">
             <h3 className="w-full text-base font-bold leading-5 text-neutral-800">
               Strategies
             </h3>
-            {strategies.map((strategy, index) => (
-              <BulletPoint key={index} text={strategy} />
-            ))}
+            <div className="w-full">
+              {strategies.map((strategy, index) => (
+                <BulletPoint key={index} text={strategy} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

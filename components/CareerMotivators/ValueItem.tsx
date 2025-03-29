@@ -118,23 +118,27 @@ const ValueItem: React.FC<ValueItemProps> = ({
           {description}
         </p>
         <div className="flex gap-3.5 items-start px-3 py-0 w-full bg-white rounded-xl">
-          <div className="flex flex-col flex-1 gap-5 items-start">
+          <div className="flex flex-col flex-1 gap-5 items-start w-full">
             <h3 className="w-full text-base font-bold leading-5 text-neutral-800">
               Pros
             </h3>
-            {pros.map((pro, index) => (
-              <BulletPoint key={`pro-${index}`} text={pro} />
-            ))}
+            <div className="w-full">
+              {pros.map((pro, index) => (
+                <BulletPoint key={`pro-${index}`} text={pro} />
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex gap-3.5 items-start px-3 py-0 w-full bg-white rounded-xl">
-          <div className="flex flex-col flex-1 gap-5 items-start">
+          <div className="flex flex-col flex-1 gap-5 items-start w-full">
             <h3 className="w-full text-base font-bold leading-5 text-neutral-800">
               Cons
             </h3>
-            {cons.map((con, index) => (
-              <BulletPoint key={`con-${index}`} text={con} />
-            ))}
+            <div className="w-full">
+              {cons.map((con, index) => (
+                <BulletPoint key={`con-${index}`} text={con} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
