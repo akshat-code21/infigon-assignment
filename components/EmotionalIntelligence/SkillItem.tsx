@@ -43,9 +43,9 @@ const SkillItem: React.FC<SkillItemProps> = ({
       bg: "bg-sky-400",
     },
     amber: {
-      text: "text-amber-400",
-      border: "border-amber-400",
-      bg: "bg-amber-400",
+      text: "text-[#B9797A]",
+      border: "border-[#B9797A]",
+      bg: "bg-[#B9797A]",
     },
   };
 

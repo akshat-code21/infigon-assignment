@@ -96,7 +96,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency. Manual dexterity and technical proficiency. Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -134,19 +134,19 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
         return (
           <div className="">
             <h2 className="text-2xl font-bold text-[#0047AB] mb-4">Learning Preferences</h2>
-            <div className="border border-gray-200 rounded-lg p-6">
+            <div className="border  rounded-lg p-6">
               <ul className="space-y-6">
                 {[0, 1, 2, 3].map((_, index) => (
-                  <li key={index} className="flex items-start">
+                  <div key={index} className="flex border-gray-200 items-start">
                     <span className="text-[#0047AB] mr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1">
                         <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
                       </svg>
                     </span>
                     <div>
-                      <p className="text-gray-500 mt-1">Manual dexterity and technical proficiency.</p>
+                      <p className="text-gray-500  mt-1">Manual dexterity and technical proficiency.</p>
                     </div>
-                  </li>
+                  </div>
                 ))}
               </ul>
             </div>

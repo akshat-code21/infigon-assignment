@@ -5,7 +5,7 @@ import ValueItem from "./ValueItem";
 
 const CareerResultsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"scores" | "conclusion">("scores");
-
+  
   const valuesData = [
     {
       number: "1",
@@ -163,7 +163,7 @@ const CareerResultsPage: React.FC = () => {
     };
     return colorMap[color] || "border-gray-500";
   };
-
+  
   const getTextColorClass = (color: string) => {
     const colorMap: Record<string, string> = {
       teal: "text-[##1999A1]",
@@ -179,7 +179,7 @@ const CareerResultsPage: React.FC = () => {
     };
     return colorMap[color] || "text-gray-500";
   };
-
+  
   const getBgColorClass = (color: string) => {
     const colorMap: Record<string, string> = {
       teal: "bg-[#1999A1]",
@@ -195,7 +195,7 @@ const CareerResultsPage: React.FC = () => {
     };
     return colorMap[color] || "bg-gray-500";
   };
-
+  
   const getIndicatorColorClass = (color: string) => {
     const colorMap: Record<string, string> = {
       red: "bg-red-500",
@@ -208,23 +208,25 @@ const CareerResultsPage: React.FC = () => {
   return (
     <div className="">
       <h1 className="text-2xl font-bold mb-6">Your <span className="text-orange-500">Result</span></h1>
-
+      
       <div className="border-b border-gray-200 mb-6">
         <div className="flex">
           <button
-            className={`py-2 px-4 font-medium ${activeTab === "scores"
+            className={`py-2 px-4 font-medium ${
+              activeTab === "scores"
                 ? "text-black border-b-2 border-orange-500"
                 : "text-gray-500"
-              }`}
+            }`}
             onClick={() => setActiveTab("scores")}
           >
             Your Scores
           </button>
           <button
-            className={`py-2 px-4 font-medium ${activeTab === "conclusion"
+            className={`py-2 px-4 font-medium ${
+              activeTab === "conclusion"
                 ? "text-black border-b-2 border-orange-500"
                 : "text-gray-500"
-              }`}
+            }`}
             onClick={() => setActiveTab("conclusion")}
           >
             Conclusion
@@ -285,7 +287,7 @@ const CareerResultsPage: React.FC = () => {
               <span className="text-gray-600">High Relevance</span>
             </div>
           </div>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
             {valuesData.map((value) => {
               return (
@@ -309,7 +311,7 @@ const CareerResultsPage: React.FC = () => {
               );
             })}
           </div>
-
+          
           <h2 className="text-lg font-bold text-[#0047AB] mb-4">Conclusion</h2>
           <div className="bg-orange-500 text-white p-6 rounded-lg">
             <p>

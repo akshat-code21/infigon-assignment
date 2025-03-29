@@ -18,7 +18,7 @@ const RiasecCircle: React.FC = () => {
         <RiasecLetter letter="I" />
       </div>
       <p className="relative mt-10 text-base leading-6 text-zinc-500">
-        <span className="font-bold">Click</span> on the coloured
+        <span className="font-bold text-black">Click</span> on the coloured
         <br />
         arcs to know about the
         <br />

@@ -7,7 +7,7 @@ interface RiasecLetterProps {
 const RiasecLetter: React.FC<RiasecLetterProps> = ({ letter }) => {
   return (
     <button
-      className="text-2xl font-bold leading-none text-white"
+      className="text-2xl font-bold leading-none text-white cursor-pointer"
       aria-label={`${letter} personality type`}
     >
       {letter}

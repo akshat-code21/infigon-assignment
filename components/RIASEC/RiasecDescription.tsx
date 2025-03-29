@@ -3,7 +3,7 @@ import React from "react";
 function RiasecDescription() {
   return (
     <article className="flex flex-col gap-2">
-      <p className="text-base leading-6 text-gray-500">
+      <p className="text-light leading-6 text-gray-500">
         <strong className="font-bold text-zinc-800">
           To understand your interest RIASEC model was used.
         </strong>{" "}

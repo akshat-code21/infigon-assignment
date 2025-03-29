@@ -29,9 +29,9 @@ const PersonalityExplorer: React.FC = () => {
               careers and education.
             </p>
           </div>
-          <div className="mt-4 w-full text-base leading-6 text-zinc-800">
+          <div className="mt-4 w-full text-base leading-6 text-gray-500">
             <p className="w-full">
-              <span className="font-bold">
+              <span className="font-bold text-black">
                 To understand your personality Myers-Brig Type Indicator (MBTI)
                 test was used.{" "}
               </span>

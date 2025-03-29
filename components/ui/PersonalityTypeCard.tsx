@@ -8,7 +8,8 @@ interface PersonalityTypeCardProps {
   typeCode: string;
   description: string;
   isHighlighted?: boolean;
-  bg? : string
+  bg? : string;
+  color : string;
 }
 
 const PersonalityTypeCard: React.FC<PersonalityTypeCardProps> = ({
@@ -17,7 +18,8 @@ const PersonalityTypeCard: React.FC<PersonalityTypeCardProps> = ({
   typeCode,
   description,
   isHighlighted = false,
-  bg
+  bg,
+  color
 }) => {
   const bgColor = bg;
 

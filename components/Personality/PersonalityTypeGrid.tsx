@@ -13,7 +13,8 @@ const personalityTypes = [
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
     isHighlighted: false,
-    bg: "bg-blue-100"
+    bg: "bg-blue-100",
+    color : "text-[#3D6272]"
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ const personalityTypes = [
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
     isHighlighted: false,
-    bg: "bg-blue-100"
+    bg: "bg-blue-100",
+    color : "text-[#3D6272]"
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ const personalityTypes = [
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
     isHighlighted: false,
-    bg: "bg-blue-100"
+    bg: "bg-blue-100",
+    color : "text-[#3D6272]"
   },
   {
     id: 4,
@@ -46,7 +49,8 @@ const personalityTypes = [
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
     isHighlighted: true,
-    bg: "bg-blue-100"
+    bg: "bg-blue-100",
+    color : "text-[#3D6272]"
   },
   {
     id: 5,
@@ -56,7 +60,8 @@ const personalityTypes = [
     typeCode: "ISTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    bg: "bg-[#EFE2C9]"
+    bg: "bg-[#EFE2C9]",
+    color : "text-[#AE935E]"
   },
   {
     id: 6,
@@ -66,7 +71,8 @@ const personalityTypes = [
     typeCode: "ESTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    bg: "bg-[#EFE2C9]"
+    bg: "bg-[#EFE2C9]",
+    color : "text-[#AE935E]"
   },
   {
     id: 7,
@@ -76,7 +82,8 @@ const personalityTypes = [
     typeCode: "ESFP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    bg: "bg-[#EFE2C9]"
+    bg: "bg-[#EFE2C9]",
+    color : "text-[#AE935E]"
   },
   {
     id: 8,
@@ -86,7 +93,8 @@ const personalityTypes = [
     typeCode: "ESTJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    bg: "bg-[#EFE2C9]"
+    bg: "bg-[#EFE2C9]",
+    color : "text-[#AE935E]"
   },
   {
     id: 9,
@@ -96,7 +104,8 @@ const personalityTypes = [
     typeCode: "INFJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#D6ECE2]"
+      bg : "bg-[#D6ECE2]",
+      color : "text-[#3D6272]"
   },
   {
     id: 10,
@@ -106,7 +115,8 @@ const personalityTypes = [
     typeCode: "INFP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#D6ECE2]"
+      bg : "bg-[#D6ECE2]",
+      color : "text-[#3D6272]"
   },
   {
     id: 11,
@@ -116,7 +126,8 @@ const personalityTypes = [
     typeCode: "ENFP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#D6ECE2]"
+      bg : "bg-[#D6ECE2]",
+      color : "text-[#3D6272]"
       
   },
   {
@@ -127,47 +138,52 @@ const personalityTypes = [
     typeCode: "ENFJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#D6ECE2]"
+      bg : "bg-[#D6ECE2]",
+      color : "text-[#3D6272]"
   },
   {
     id: 13,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/166621c9c66b4dd50fd84b9bd8653c9f873ae285?placeholderIfAbsent=true",
     title: "Protagonist",
-    typeCode: "ENFJ",
+    typeCode: "INTJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#E7DFEA]"
+      bg : "bg-[#E7DFEA]",
+      color : "text-[#9361A6]"
   },
   {
     id: 14,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/f8ffe76a87e24535575a3a2f3a3533d33d866dd8?placeholderIfAbsent=true",
     title: "Protagonist",
-    typeCode: "ENFJ",
+    typeCode: "INTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#E7DFEA]"
+      bg : "bg-[#E7DFEA]",
+      color : "text-[#9361A6]"
   },
   {
     id: 15,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/339c5178f799ef5485d36a6d5c541612dc5da46b?placeholderIfAbsent=true",
     title: "Protagonist",
-    typeCode: "ENFJ",
+    typeCode: "ENTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#E7DFEA]"
+      bg : "bg-[#E7DFEA]",
+      color : "text-[#9361A6]"
   },
   {
     id: 16,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/44f24c5fa1d61461d135ff682a6a498ec366a345?placeholderIfAbsent=true",
     title: "Protagonist",
-    typeCode: "ENFJ",
+    typeCode: "ENTJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
-      bg : "bg-[#E7DFEA]"
+      bg : "bg-[#E7DFEA]",
+      color : "text-[#9361A6]"
   },
 ];
 
@@ -183,6 +199,7 @@ const PersonalityTypeGrid: React.FC = () => {
           description={type.description}
           isHighlighted={type.isHighlighted}
           bg={type.bg}
+          color={type.color}
         />
       ))}
     </section>
