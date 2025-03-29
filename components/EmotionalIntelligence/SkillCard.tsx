@@ -20,7 +20,6 @@ const SkillCard: React.FC<SkillCardProps> = ({
   strategies,
   isActive,
 }) => {
-  // Determine colors based on active state
   const borderColor = isActive ? "border-sky-500" : "border-stone-400";
   const textColor = isActive ? "text-sky-500" : "text-stone-400";
   const bgColor = isActive ? "bg-sky-500" : "bg-stone-400";

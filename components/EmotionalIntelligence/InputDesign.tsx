@@ -4,7 +4,6 @@ import React from "react";
 import SkillCard from "./SkillCard";
 
 const InputDesign: React.FC = () => {
-  // Sample data for the skill cards
   const skillCards = [
     {
       number: "2",

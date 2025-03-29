@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="mt-10">
+      <div className="mt-10 px-4 md:px-6 lg:px-8">
         <ReportHeader />
         <CareerOptionsSection />
       </div>
-      <div className="flex">
+      <div className="flex w-full">
         <InputDesign />
       </div>
     </>

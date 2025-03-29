@@ -21,7 +21,6 @@ const SkillItem: React.FC<SkillItemProps> = ({
   description,
   strategies,
 }) => {
-  // Map color names to Tailwind classes
   const colorClasses = {
     orange: {
       text: "text-orange-400",
@@ -63,7 +62,6 @@ const SkillItem: React.FC<SkillItemProps> = ({
 
   return (
     <article className="flex flex-col gap-1.5 items-start w-full">
-      {/* Header */}
       <header className="flex gap-3 items-center px-3 py-2.5 w-full bg-white h-[62px]">
         <div
           className={`gap-2 px-3 py-2 text-sm font-bold leading-5 ${textColor} rounded-2xl ${borderColor} border-[1.667px] h-[35px] w-[35px] flex items-center justify-center`}
@@ -85,7 +83,6 @@ const SkillItem: React.FC<SkillItemProps> = ({
         </div>
       </header>
 
-      {/* Content */}
       <div
         className={`flex flex-col gap-5 items-start px-3 py-6 w-full rounded-2xl border ${borderColor}`}
       >

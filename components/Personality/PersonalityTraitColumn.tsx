@@ -14,18 +14,16 @@ const PersonalityTraitColumn: React.FC<PersonalityTraitColumnProps> = ({
   traits,
 }) => {
   return (
-    <section className="flex gap-2.5 items-center w-72 h-full text-base min-w-60">
-      <div className="self-stretch my-auto w-72 min-h-[408px] min-w-60">
-        {traits.map((trait, index) => (
-          <div key={trait.title} className={index > 0 ? "mt-3" : ""}>
-            <PersonalityTraitCard
-              title={trait.title}
-              description={trait.description}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className="w-full flex flex-col gap-4">
+      {traits.map((trait, index) => (
+        <div key={trait.title} className="w-full">
+          <PersonalityTraitCard
+            title={trait.title}
+            description={trait.description}
+          />
+        </div>
+      ))}
+    </div>
   );
 };
 

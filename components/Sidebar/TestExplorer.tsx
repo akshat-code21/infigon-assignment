@@ -9,9 +9,10 @@ import DownloadButton from "../ui/DownloadButton";
 interface TestExplorerProps {
   onSubmenuItemClick?: (selection: { testName: string; subItem: string }) => void;
   onTestClick?: (testName: string) => void;
+  onMobileItemClick?: () => void;
 }
 
-const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestClick }) => {
+const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestClick, onMobileItemClick }) => {
   const [activeTest, setActiveTest] = useState<number>(0);
   const [activeSubItem, setActiveSubItem] = useState<string | null>(null);
 
@@ -63,11 +64,13 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     if (onSubmenuItemClick) {
       onSubmenuItemClick({ testName, subItem });
     }
+    if (onMobileItemClick) {
+      onMobileItemClick();
+    }
   };
 
   const handleTestClick = (index: number) => {
     setActiveTest(index);
-
 
     const firstSubmenuItem = tests[index].submenuItems[0] || null;
     setActiveSubItem(firstSubmenuItem);
@@ -75,7 +78,6 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     if (onTestClick) {
       onTestClick(tests[index].testName);
     }
-
 
     if (onSubmenuItemClick && firstSubmenuItem) {
       onSubmenuItemClick({
@@ -86,7 +88,7 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
   };
 
   return (
-    <nav className="flex flex-col justify-center w-80">
+    <nav className="flex flex-col justify-center w-80 max-w-full">
       <div className="w-full">
         {tests.map((test, index) => (
           <React.Fragment key={index}>

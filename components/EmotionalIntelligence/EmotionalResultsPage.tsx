@@ -5,8 +5,6 @@ import SkillItem from "./SkillItem";
 
 const EmotionalResultsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"scores" | "conclusion">("scores");
-  
-  // Sample data - replace with actual data from your API or state management
   const skillsData = [
     {
       number: "1",
@@ -79,7 +77,6 @@ const EmotionalResultsPage: React.FC = () => {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <h1 className="text-2xl font-bold text-blue-600 mb-6">Your Result</h1>
       
-      {/* Tabs */}
       <div className="border-b border-gray-200 mb-6">
         <div className="flex">
           <button
@@ -105,7 +102,6 @@ const EmotionalResultsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Legend */}
       {activeTab === "scores" && (
         <div className="flex items-center gap-6 mb-6">
           <h2 className="text-lg font-bold text-blue-600">Your Scores</h2>
@@ -120,7 +116,6 @@ const EmotionalResultsPage: React.FC = () => {
         </div>
       )}
 
-      {/* Skills List */}
       {activeTab === "scores" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {skillsData.map((skill) => (
@@ -138,7 +133,6 @@ const EmotionalResultsPage: React.FC = () => {
         </div>
       )}
 
-      {/* Conclusion Tab Content */}
       {activeTab === "conclusion" && (
         <div className="bg-white p-6 rounded-lg border border-gray-200">
           this is Conclusion Emotional Results

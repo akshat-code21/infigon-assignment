@@ -6,7 +6,6 @@ import ValueItem from "./ValueItem";
 const CareerResultsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"scores" | "conclusion">("scores");
   
-  // Sample data - replace with actual data from your API or state management
   const valuesData = [
     {
       number: "1",
@@ -154,7 +153,6 @@ const CareerResultsPage: React.FC = () => {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <h1 className="text-2xl font-bold mb-6">Your <span className="text-orange-500">Result</span></h1>
       
-      {/* Tabs */}
       <div className="border-b border-gray-200 mb-6">
         <div className="flex">
           <button
@@ -180,7 +178,6 @@ const CareerResultsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Legend */}
       {activeTab === "scores" && (
         <div className="flex items-center gap-6 mb-6">
           <h2 className="text-lg font-bold text-blue-600">Your Scores</h2>
@@ -199,7 +196,6 @@ const CareerResultsPage: React.FC = () => {
         </div>
       )}
 
-      {/* Values List */}
       {activeTab === "scores" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {valuesData.map((value) => (
@@ -218,7 +214,6 @@ const CareerResultsPage: React.FC = () => {
         </div>
       )}
 
-      {/* Conclusion Tab Content */}
       {activeTab === "conclusion" && (
         <div className="bg-white p-6 rounded-lg border border-gray-200">
           This is conclusion of career motivators result

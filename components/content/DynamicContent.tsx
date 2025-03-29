@@ -13,7 +13,6 @@ import EmotionalIntelligenceComponent from "../DanielGoleman/EmotionalIntelligen
 import LearningStylesPage from "../LearningStyles/LearningStylesPage";
 import ResultsPageComponent from "../LearningStyles/ResultsPageComponent";
 import EmotionalResultsPage from "../EmotionalIntelligence/EmotionalResultsPage";
-import CareerResults from "../CareerMotivators/ValueItem";
 import CareerResultsPage from "../CareerMotivators/CareerResults";
 
 interface DynamicContentProps {

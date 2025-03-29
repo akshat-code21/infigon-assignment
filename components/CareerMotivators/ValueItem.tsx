@@ -23,7 +23,6 @@ const ValueItem: React.FC<ValueItemProps> = ({
   pros,
   cons,
 }) => {
-  // Map color names to Tailwind classes
   const colorClasses = {
     teal: {
       text: "text-[#1999A1]",
@@ -91,7 +90,6 @@ const ValueItem: React.FC<ValueItemProps> = ({
 
   return (
     <article className="flex flex-col gap-1.5 items-start w-full">
-      {/* Header */}
       <header className="flex gap-3 items-center px-3 py-2.5 w-full bg-white h-[62px]">
         <div
           className={`gap-2 px-3 py-2 text-sm font-bold leading-5 ${textColor} rounded-2xl ${borderColor} border-[1.667px] h-[35px] w-[35px] flex items-center justify-center`}
@@ -113,15 +111,12 @@ const ValueItem: React.FC<ValueItemProps> = ({
         </div>
       </header>
 
-      {/* Content */}
       <div
         className={`flex flex-col gap-5 items-start px-3 py-6 w-full rounded-2xl border ${borderColor}`}
       >
         <p className="flex-1 gap-2.5 px-3 py-0 w-full text-base leading-5 text-stone-500">
           {description}
         </p>
-        
-        {/* Pros Section */}
         <div className="flex gap-3.5 items-start px-3 py-0 w-full bg-white rounded-xl">
           <div className="flex flex-col flex-1 gap-5 items-start">
             <h3 className="w-full text-base font-bold leading-5 text-neutral-800">
@@ -132,8 +127,6 @@ const ValueItem: React.FC<ValueItemProps> = ({
             ))}
           </div>
         </div>
-        
-        {/* Cons Section */}
         <div className="flex gap-3.5 items-start px-3 py-0 w-full bg-white rounded-xl">
           <div className="flex flex-col flex-1 gap-5 items-start">
             <h3 className="w-full text-base font-bold leading-5 text-neutral-800">
