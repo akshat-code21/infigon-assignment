@@ -17,7 +17,12 @@ const YourResult: React.FC = () => {
     "Work Style",
     "Preferences",
     "Interpersonal Interaction",
-    "Work Culture"
+    "Work Culture",
+    "Roles",
+    "Case Studies",
+    "Famous Personalitites",
+    "Recommendations",
+    "Conclusion",
   ];
 
   return (
@@ -31,7 +36,7 @@ const YourResult: React.FC = () => {
         onTabChange={setActivePersonalityTab}
       />
 
-      <ResultsContent />
+      <ResultsContent activeTab={activePersonalityTab} />
     </main>
   );
 };
