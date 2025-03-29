@@ -24,7 +24,7 @@ const CounselorCard: React.FC = () => {
               </span>
             </p>
           </div>
-          <button className="overflow-hidden gap-0.5 self-stretch px-3.5 py-2 my-auto font-bold leading-snug text-center bg-gray-200 rounded-md shadow-sm text-zinc-800">
+          <button className="overflow-hidden gap-0.5 self-stretch px-3.5 py-2 my-auto font-bold leading-snug text-center bg-gray-200 rounded-md shadow-sm text-zinc-800 hover:text-black hover:bg-blue-500 hover:animate-fadeIn">
             See All
           </button>
         </div>

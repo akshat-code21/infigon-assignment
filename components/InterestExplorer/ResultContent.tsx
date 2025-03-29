@@ -61,7 +61,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Prefer tasks that involve physical work and create outcomes.</p>
+                  <p className="text-gray-500">Prefer tasks that involve physical work and create outcomes.</p>
                 </div>
               ))}
             </div>
@@ -75,7 +75,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-400">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -89,7 +89,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex flex-row items-center">
                   <span className="mt-1 mr-3 flex-shrink-0"><MapPin /></span>
-                  <p className="mt-1 text-gray-700">Construction sites, manufacturing plants, or workshops.</p>
+                  <p className="mt-1 text-gray-500">Construction sites, manufacturing plants, or workshops.</p>
                 </div>
               ))}
             </div>
@@ -103,7 +103,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Direct and straightforward communication.</p>
+                  <p className="text-gray-500">Direct and straightforward communication.</p>
                 </div>
               ))}
             </div>

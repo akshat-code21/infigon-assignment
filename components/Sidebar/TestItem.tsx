@@ -8,6 +8,7 @@ interface TestItemProps {
   testName: string;
   isActive?: boolean;
   textColor: string;
+  border: string;
   onClick?: () => void;
 }
 
@@ -17,14 +18,15 @@ const TestItem: React.FC<TestItemProps> = ({
   testName,
   isActive = false,
   textColor,
+  border,
   onClick,
 }) => {
   return (
     <button
-      className={`cursor-pointer flex gap-2.5 items-center px-5 py-4 w-full text-base bg-white rounded-lg text-left ${
+      className={`cursor-pointer flex gap-2.5 items-center px-5 py-4 w-full text-base bg-white rounded-lg text-left transition-all duration-300 ease-in-out ${
         isActive
-          ? "border-r-4 border-blue-800 min-h-20 shadow-[0px_6px_12px_rgba(0,0,0,0.1)]"
-          : ""
+          ? `border-r-4 ${border} min-h-20 shadow-[0px_6px_12px_rgba(0,0,0,0.1)] opacity-100`
+          : "opacity-80 hover:opacity-100"
       }`}
       onClick={onClick}
     >
