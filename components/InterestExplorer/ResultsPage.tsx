@@ -39,7 +39,7 @@ const ResultsPage: React.FC = () => {
         onTabChange={setActivePersonalityTab}
       />
 
-      <ResultsContent />
+      <ResultsContent activeTab={activePersonalityTab}/>
     </main>
   );
 };
