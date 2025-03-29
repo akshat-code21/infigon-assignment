@@ -4,7 +4,9 @@ export interface CardProps {
   }
   
   export interface IconProps {
-    icon: string;
-    color: string;
+    icon: any;
+    color?: string;
+    title?: string;
+    description?: string;
   }
   
