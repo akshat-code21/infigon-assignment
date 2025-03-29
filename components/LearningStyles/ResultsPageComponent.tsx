@@ -5,19 +5,19 @@ import ResultsHeader from "./ResultsHeader";
 import ResultsNavigation from "./ResultsNavigation";
 import ResultsContent from "./ResultsContent";
 
-const YourResult: React.FC = () => {
+const ResultsPageComponent: React.FC = () => {
 
   const [activePersonalityTab, setActivePersonalityTab] =
-    useState<string>("Personality");
+    useState<string>("Learning Style");
 
   const personalityTabs = [
-    "Personality",
+    "Learning Style",
     "Characteristics",
-    "Strengths/Weakness",
-    "Work Style",
     "Preferences",
+    "Strengths",
+    "Environment",
     "Interpersonal Interaction",
-    "Work Culture"
+    "Influence"
   ];
 
   return (
@@ -36,4 +36,4 @@ const YourResult: React.FC = () => {
   );
 };
 
-export default YourResult;
+export default ResultsPageComponent;

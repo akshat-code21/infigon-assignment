@@ -8,6 +8,13 @@ import RiasecCareerInfo from "../RIASEC/RiasecCareerInfo";
 import ResultsPage from "../InterestExplorer/ResultsPage";
 import CareerMotivators from "../CareerMotivators/CareerMotivators";
 import CareerMotivatorsContent from "../CareerMotivators/CareerMotivatorsContent";
+import EmotionalIntelligence from "../EmotionalIntelligence/EmotionalIntelligence";
+import EmotionalIntelligenceComponent from "../DanielGoleman/EmotionalIntelligence";
+import LearningStylesPage from "../LearningStyles/LearningStylesPage";
+import ResultsPageComponent from "../LearningStyles/ResultsPageComponent";
+import EmotionalResultsPage from "../EmotionalIntelligence/EmotionalResultsPage";
+import CareerResults from "../CareerMotivators/ValueItem";
+import CareerResultsPage from "../CareerMotivators/CareerResults";
 
 interface DynamicContentProps {
   testName: string;
@@ -54,44 +61,86 @@ const DynamicContent: React.FC<DynamicContentProps> = ({ testName, subItem }) =>
       }
     }
 
-    if (testName === "Understanding Interest Explorer") {
+    if (testName === "Interest Explorer") {
       switch (subItem) {
         case "Understanding Interest Explorer":
           return <InterestExplorer />;
         case "RIASEC Model":
           return (
             <div className="flex flex-col">
-              <ThemesOfRiasec/>
-              <RiasecCareerInfo/>
+              <ThemesOfRiasec />
+              <RiasecCareerInfo />
             </div>
           );
         case "Your Result":
           return (
-           <ResultsPage/>
+            <ResultsPage />
           );
         default:
           return null;
       }
     }
 
-    if (testName === "Understanding Career Motivators") {
+    if (testName === "Career Motivators") {
       switch (subItem) {
         case "Understanding Career Motivators":
           return (
             <div className="h-full">
-              <CareerMotivators/>
+              <CareerMotivators />
             </div>
           );
-          case "10 Career Motivators":
-            return(
-              <CareerMotivatorsContent/>
-            )
+        case "10 Career Motivators":
+          return (
+            <CareerMotivatorsContent />
+          )
         case "Your Result":
           return (
             <div className="h-full">
-              your motivators
+              <CareerResultsPage/>
             </div>
           );
+        default:
+          return null;
+      }
+    }
+
+    if (testName === "Emotional Intelligence") {
+      switch (subItem) {
+        case "Understanding Emotional Intelligence":
+          return (
+            <div className="h-full">
+              <EmotionalIntelligence />
+            </div>
+          );
+        case "Daniel Goleman Emotional Intelligence Test":
+          return (
+            <EmotionalIntelligenceComponent />
+          )
+        case "Your Result":
+          return (
+            <div>
+              <EmotionalResultsPage/>
+            </div>
+          )
+        default:
+          return null;
+      }
+    }
+
+    if (testName === "Learning Styles") {
+      switch (subItem) {
+        case "Understanding Learning Styles":
+          return (
+            <div className="h-full">
+              <LearningStylesPage />
+            </div>
+          );
+        case "Your Result":
+          return (
+            <div className="h-full">
+              <ResultsPageComponent/>
+            </div>
+          )
         default:
           return null;
       }

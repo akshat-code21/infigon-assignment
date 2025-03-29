@@ -27,7 +27,7 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/16ab353f780502179c560d050daa81b70445c4b8?placeholderIfAbsent=true",
       testNumber: "TEST 2",
-      testName: "Understanding Interest Explorer",
+      testName: "Interest Explorer",
       textColor: "text-green-600",
       submenuTitle: "Understanding Interest Explorer",
       submenuItems: ["Understanding Interest Explorer", "RIASEC Model", "Your Result"],
@@ -35,9 +35,9 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/98c1e1ea421adf9234d5739dfb02351a47593098?placeholderIfAbsent=true",
       testNumber: "TEST 3",
-      testName: "Understanding Career Motivators",
+      testName: "Career Motivators",
       textColor: "text-amber-500",
-      submenuTitle: "Understanding Career Motivators",
+      submenuTitle: "Career Motivators",
       submenuItems: ["Understanding Career Motivators","10 Career Motivators", "Your Result"],
     },
     {
@@ -46,15 +46,15 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
       testName: "Emotional Intelligence",
       textColor: "text-blue-500",
       submenuTitle: "Understanding Emotional Intelligence",
-      submenuItems: ["EQ Components", "Your EQ Score"],
+      submenuItems: ["Understanding Emotional Intelligence","Daniel Goleman Emotional Intelligence Test", "Your Result"],
     },
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/316f9a1b8236a493d20b73e26d9e8baee196033d?placeholderIfAbsent=true",
       testNumber: "TEST 5",
       testName: "Learning Styles",
       textColor: "text-fuchsia-500",
-      submenuTitle: "Understanding Learning Styles",
-      submenuItems: ["Learning Style Types", "Your Learning Style"],
+      submenuTitle: "Learning Styles",
+      submenuItems: ["Understanding Learning Styles","Your Result"],
     },
   ];
 
@@ -86,7 +86,7 @@ const TestExplorer: React.FC<TestExplorerProps> = ({ onSubmenuItemClick, onTestC
   };
 
   return (
-    <nav className="flex flex-col justify-center">
+    <nav className="flex flex-col justify-center w-80">
       <div className="w-full">
         {tests.map((test, index) => (
           <React.Fragment key={index}>

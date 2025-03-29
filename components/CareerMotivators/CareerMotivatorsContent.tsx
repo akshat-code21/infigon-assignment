@@ -6,18 +6,18 @@ import InfoCard from "@/components/ui/InfoCard";
 const CareerMotivatorsContent: React.FC = () => {
   const motivators = [
     { number: 1, text: "Achievement and Results", color: "#1999A1" },
-    { number: 2, text: "Helping Others", color: "yellow-700" },
-    { number: 3, text: "Financial Rewards", color: "teal-300" },
-    { number: 4, text: "Creativity and Innovation", color: "yellow-400" },
-    { number: 5, text: "Security and Stability", color: "purple-600" },
-    { number: 6, text: "Leadership and Influence", color: "sky-500" },
-    { number: 7, text: "Continuous Learning", color: "blue-800" },
-    { number: 8, text: "Independence", color: "fuchsia-400" },
-    { number: 9, text: "Teamwork and Collaboration", color: "stone-400" },
+    { number: 2, text: "Helping Others", color: "#A15A19" },
+    { number: 3, text: "Financial Rewards", color: "#55DCDC" },
+    { number: 4, text: "Creativity and Innovation", color: "#F6C61A" },
+    { number: 5, text: "Security and Stability", color: "#9140F8" },
+    { number: 6, text: "Leadership and Influence", color: "#00A3FF" },
+    { number: 7, text: "Continuous Learning", color: "#194CA1" },
+    { number: 8, text: "Independence", color: "#EE82FF" },
+    { number: 9, text: "Teamwork and Collaboration", color: "#B97979" },
     {
       number: 10,
       text: "Flexibility and Work-Life Balance",
-      color: "orange-400",
+      color: "#FA9B56",
     },
   ];
 
