@@ -145,7 +145,7 @@ const personalityTypes = [
     id: 13,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/166621c9c66b4dd50fd84b9bd8653c9f873ae285?placeholderIfAbsent=true",
-    title: "Protagonist",
+    title: "Architect",
     typeCode: "INTJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
@@ -156,7 +156,7 @@ const personalityTypes = [
     id: 14,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/f8ffe76a87e24535575a3a2f3a3533d33d866dd8?placeholderIfAbsent=true",
-    title: "Protagonist",
+    title: "Thinker",
     typeCode: "INTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
@@ -167,7 +167,7 @@ const personalityTypes = [
     id: 15,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/339c5178f799ef5485d36a6d5c541612dc5da46b?placeholderIfAbsent=true",
-    title: "Protagonist",
+    title: "Debater",
     typeCode: "ENTP",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",
@@ -178,7 +178,7 @@ const personalityTypes = [
     id: 16,
     image:
       "https://cdn.builder.io/api/v1/image/assets/d0fac57f9fc74d7eb974f4d4af23daa2/44f24c5fa1d61461d135ff682a6a498ec366a345?placeholderIfAbsent=true",
-    title: "Protagonist",
+    title: "Commander",
     typeCode: "ENTJ",
     description:
       "Focuses on concrete, tangible information and present realities tangible information and present realities",

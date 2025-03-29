@@ -39,7 +39,7 @@ const PersonalityTypeCard: React.FC<PersonalityTypeCardProps> = ({
           {title}
         </h2>
         <span
-          className={`gap-2.5 self-stretch p-2.5 my-auto rounded-2xl ${bgColor} text-slate-600`}
+          className={`gap-2.5 self-stretch p-2.5 my-auto rounded-2xl ${bgColor} ${color}`}
         >
           {typeCode}
         </span>

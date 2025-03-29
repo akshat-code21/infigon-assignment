@@ -82,7 +82,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency. Manual dexterity and technical proficiency. Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency. Manual dexterity and technical proficiency. Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -124,7 +124,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="text-green-500 mr-2"><TreeDeciduous /></span>
-                  <p className="text-gray-500 mt-1">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500 mt-1">Manual dexterity and technical proficiency. Manual dexterity and technical proficiency. Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -142,7 +142,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
                       <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
                     </svg>
                   </span>
-                  <p className="mt-2 text-gray-500">Manual dexterity and technical proficiency.</p>
+                  <p className="mt-2 text-gray-500">Manual dexterity and technical proficiency. Manual dexterity and technical proficiency. Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>

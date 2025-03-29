@@ -6,7 +6,7 @@ import BenefitCard from "../ui/BenefitCard";
 
 const PersonalityExplorer: React.FC = () => {
   return (
-    <article className="w-full px-4 md:px-6">
+    <article className="w-full">
       <header>
         <h1 className="text-2xl md:text-3xl font-bold leading-tight text-blue-800">
           <span style={{ color: "rgba(37,42,49,1)" }}>Understanding </span>
