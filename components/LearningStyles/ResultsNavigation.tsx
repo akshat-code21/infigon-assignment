@@ -53,13 +53,13 @@ const ResultsNavigation: React.FC<ResultsNavigationProps> = ({
           onClick={() => onTabChange(tab)}
           className={`px-5 py-4 text-lg font-medium whitespace-nowrap transition-colors relative ${
             activeTab === tab
-              ? "text-[#0047AB] font-semibold"
+              ? "text-black font-semibold"
               : "text-gray-500 hover:text-gray-700"
           }`}
         >
           {tab}
           {activeTab === tab && (
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-[#0047AB]"></div>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-[#DE5AFF]"></div>
           )}
         </button>
       ))}

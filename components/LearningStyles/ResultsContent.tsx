@@ -82,7 +82,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -96,7 +96,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -124,7 +124,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="text-green-500 mr-2"><TreeDeciduous /></span>
-                  <p className="text-gray-700 mt-1">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-500 mt-1">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
@@ -133,7 +133,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
       case "Preferences":
         return (
           <div className="">
-            <h2 className="text-2xl font-bold text-[#0047AB] mb-4">Preferences</h2>
+            <h2 className="text-2xl font-bold text-[#0047AB] mb-4">Learning Preferences</h2>
             <div className="border border-gray-200 rounded-lg p-6">
               <ul className="space-y-6">
                 {[0, 1, 2, 3].map((_, index) => (
@@ -144,7 +144,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
                       </svg>
                     </span>
                     <div>
-                      <p className="text-gray-600 mt-1">Manual dexterity and technical proficiency.</p>
+                      <p className="text-gray-500 mt-1">Manual dexterity and technical proficiency.</p>
                     </div>
                   </li>
                 ))}
@@ -161,7 +161,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
                 {workCulture.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3"></span>
-                    <p className="text-gray-600">{item.title} : {item.description}</p>
+                    <p className="text-gray-500 font-light">{item.title} : {item.description}</p>
                   </li>
                 ))}
               </ul>
@@ -177,7 +177,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
                 {workCulture.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3"></span>
-                    <p className="text-gray-600">{item.title} : {item.description}</p>
+                    <p className="text-gray-500 font-light">{item.title} : {item.description}</p>
                   </li>
                 ))}
               </ul>
@@ -190,7 +190,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
             <h2 className="text-lg font-semibold text-[#0047AB] mb-4">Advice/Strategies</h2>
             <div className="flex flex-col gap-4 border border-gray-400 rounded-lg py-3 px-2">
               {adviceStrategies.map((item, index) => (
-                <div key={index} className="bg-[#319759] text-white rounded-lg p-6 flex items-start">
+                <div key={index} className="bg-[#319759] text-white rounded-lg px-6 py-2 flex items-start">
                   <span className="text-white mr-1 flex-shrink-0">●</span>
                   <p className="text-lg font-extralight">{item.advice}</p>
                 </div>
@@ -202,7 +202,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
         return (
           <div className="">
             <h2 className="text-2xl font-bold text-[#0047AB] mb-4">Conclusion</h2>
-            <div className="bg-[#DE5AFF] text-white rounded-lg p-6">
+            <div className="bg-[#DE5AFF] text-white rounded-lg px-6 py-2">
               <p className="text-lg font-extralight">
                 You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real-world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths.
               </p>

@@ -75,7 +75,7 @@ const ResultsContent: React.FC<ResultsContentProps> = ({ activeTab }) => {
               {[0, 1, 2, 3].map((_, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg p-4 flex items-start">
                   <span className="h-2 w-2 rounded-full bg-gray-800 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-gray-700">Manual dexterity and technical proficiency.</p>
+                  <p className="text-gray-400">Manual dexterity and technical proficiency.</p>
                 </div>
               ))}
             </div>
