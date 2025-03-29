@@ -16,8 +16,11 @@ const ResultsPageComponent: React.FC = () => {
     "Preferences",
     "Strengths",
     "Environment",
-    "Interpersonal Interaction",
-    "Influence"
+    "Workplace Manifestation",
+    "Influence",
+    "Suggestions",
+    "Advice/Stratergies",
+    "Conclusion",
   ];
 
   return (
@@ -31,7 +34,7 @@ const ResultsPageComponent: React.FC = () => {
         onTabChange={setActivePersonalityTab}
       />
 
-      <ResultsContent />
+      <ResultsContent activeTab={activePersonalityTab}/>
     </main>
   );
 };
